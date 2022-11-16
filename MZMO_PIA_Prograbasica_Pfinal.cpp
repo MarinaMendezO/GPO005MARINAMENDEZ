@@ -180,7 +180,7 @@ void modificar() {
     do {
         printf("Ingrese el num de articulo a modificar: ");
         scanf_s("%d", &Modificar);
-    } while (Modificar < 0);
+    } while (Modificar > 0);
     scanf_s("%d", &Modificar);
     for (int i = 0; i < registros; i++) {
         if (Modificar == item[i]) {
